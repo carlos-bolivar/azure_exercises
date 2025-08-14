@@ -15,6 +15,7 @@ import uuid
 
 imageSourceUrl = 'https://'+ app.config['BLOB_ACCOUNT']  + '.blob.core.windows.net/' + app.config['BLOB_CONTAINER']  + '/'
 
+app.logger.warning('hey, does this wortk?')
 @app.route('/')
 @app.route('/home')
 @login_required
